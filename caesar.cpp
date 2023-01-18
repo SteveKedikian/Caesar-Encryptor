@@ -1,13 +1,5 @@
 #include "caesar.h"
 
-enum {
-    LETTER_COUNT = 26,
-    CAPITAL_A = 65,
-    CAPITAL_Z = 90,
-    SMALL_a = 97,
-    SMALL_z = 122
-};
-
 std::string caesar_encrypt(const std::string& line, const int key) {
     if (key <= 0) {
         return line;
